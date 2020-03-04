@@ -13,9 +13,7 @@ Additional description about the project and its features.
 - ES6
 
 
-## Authors
-
-👤 **Armando Soto**
+## Author
 
 - Github: [@SotoArmando](https://github.com/SotoArmando)
 - Twitter: [@FeatSotoArmando](https://twitter.com/FeatSotoArmando)
