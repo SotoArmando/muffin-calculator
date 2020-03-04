@@ -2,7 +2,7 @@
 
 Muffin Calculator is a good way for me to improve my features done in REACT.
 
-![screenshot](./app_screenshot.png)
+
 
 Additional description about the project and its features.
 
