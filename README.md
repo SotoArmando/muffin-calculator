@@ -15,7 +15,7 @@ Additional description about the project and its features.
 
 ## Authors
 
-👤 **Author1**
+👤 **Armando Soto**
 
 - Github: [@SotoArmando](https://github.com/SotoArmando)
 - Twitter: [@FeatSotoArmando](https://twitter.com/FeatSotoArmando)
