@@ -4,7 +4,7 @@ Muffin Calculator is a good way for me to improve my features done in REACT.
 
 
 
-An Easy and Cool Calculator it lets ya go deal with numbers as any other calculator...
+An Easy and Cool Calculator it lets ya go deal with numbers as any other calculator... we built apple.
 
 ## Built With
 
