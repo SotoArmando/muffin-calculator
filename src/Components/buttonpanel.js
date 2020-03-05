@@ -1,14 +1,25 @@
 import React from 'react';
-import Button from './button'
+import PropTypes from 'prop-types';
+import Button from './button';
 
-class Buttonpanel extends React.Component {
-  render() {
-    return (
-      <div className="buttonpanel">
-        {this.props.names.map((item) => <Button name={item}></Button>)}
-      </div>
-    );
-  }
-}
-
+const Buttonpanel = props => {
+  const { names } = props;
+  return (
+    <div className="buttonpanel">
+      {
+        names.map((item, key) => (
+          <Button
+            key={0}
+            name={item}
+            size={(key === 0 && names.length === 3) ? 2 : 1}
+            last={key === names.length - 1}
+          />
+        ))
+      }
+    </div>
+  );
+};
+Buttonpanel.propTypes = {
+  names: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 export default Buttonpanel;
