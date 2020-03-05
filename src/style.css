@@ -1,0 +1,44 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+div#root {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-0 {
+    min-width: 5em;
+    min-height: 5em;
+    font-size: 1.375em;
+    color: rgba(0,0,0,.74);
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgba(0,0,0,.15);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    box-sizing: border-box;
+    transition-duration: 355ms;
+}
+
+.display {
+    font-size: 3em;
+    min-height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1em;
+    background-color: rgba(0,0,0,.06);
+    color: rgba(0,0,0,.34);
+}
+
+button:focus, input[type="button"]:focus {
+    outline: none;
+}
+button:focus, input[type="button"]:active {
+    transition-duration: 200ms;
+    color:yellow;
+    background-color: #F0F0F5;
+}

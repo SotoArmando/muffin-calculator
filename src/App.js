@@ -2,25 +2,20 @@
 
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import Buttonpanel from './Components/buttonpanel'
+import Display from './Components/display'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet"></link>
+      <Display result={0} ></Display>
+      <Buttonpanel names ={['AC','+/-','%','÷']}></Buttonpanel>
+      <Buttonpanel names ={['7','8','9','X']}></Buttonpanel>
+      <Buttonpanel names ={['4','5','6','-']}></Buttonpanel>
+      <Buttonpanel names ={['1','2','3','+']}></Buttonpanel>
+      <Buttonpanel names ={['0','.','=','']}></Buttonpanel>
     </div>
   );
 }
