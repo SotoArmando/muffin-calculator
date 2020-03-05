@@ -3,16 +3,22 @@ import PropTypes from 'prop-types';
 import Button from './button';
 
 const Buttonpanel = props => {
-  const { names } = props;
+  const { names, clickHandler } = props;
+
+  function handleClick(name){
+    clickHandler(name);
+  }
+
   return (
     <div className="buttonpanel">
       {
         names.map((item, key) => (
           <Button
-            key={0}
+            key={key+new Date().getTime()} 
             name={item}
             size={(key === 0 && names.length === 3) ? 2 : 1}
             last={key === names.length - 1}
+            clickHandler={handleClick}
           />
         ))
       }

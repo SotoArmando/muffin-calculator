@@ -1,16 +1,9 @@
-import Big from 'Big';
+const Big = require('big.js');
+
 
 export default function operate(numberOne, numberTwo, operation) {
   const operationssrt = ['+/-', '%', '÷', 'X', '-', '+'];
-  this.operations = [
-    this.big,
-    this.remainder,
-    this.division,
-    this.multiplication,
-    this.substraction,
-    this.addition,
-    this.result,
-  ];
+
   switch (operation) {
     case operationssrt[0]:
       return new Big(numberOne).multiply(-1);
