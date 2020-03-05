@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './style.css';
 import Buttonpanel from './Components/buttonpanel'
 import Display from './Components/display'
+import calculate from './Logic/calculate'
 
 function App() {
   return (
