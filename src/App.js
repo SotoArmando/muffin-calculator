@@ -15,7 +15,7 @@ function App() {
       <Buttonpanel names ={['7','8','9','X']}></Buttonpanel>
       <Buttonpanel names ={['4','5','6','-']}></Buttonpanel>
       <Buttonpanel names ={['1','2','3','+']}></Buttonpanel>
-      <Buttonpanel names ={['0','.','=','']}></Buttonpanel>
+      <Buttonpanel names ={['0','.','=']}></Buttonpanel>
     </div>
   );
 }
