@@ -1,7 +1,6 @@
 /* eslint react/jsx-filename-extension: 0 react/jsx-one-expression-per-line:0 */
 
 import React from 'react';
-import logo from './logo.svg';
 import './style.css';
 import Buttonpanel from './Components/buttonpanel'
 import Display from './Components/display'
