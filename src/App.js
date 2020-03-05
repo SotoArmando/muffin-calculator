@@ -9,7 +9,7 @@ import Display from './Components/display'
 function App() {
   return (
     <div className="App">
-      <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap" rel="stylesheet"></link>
       <Display result={0} ></Display>
       <Buttonpanel names ={['AC','+/-','%','÷']}></Buttonpanel>
       <Buttonpanel names ={['7','8','9','X']}></Buttonpanel>
