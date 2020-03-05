@@ -24,4 +24,3 @@ Buttonpanel.propTypes = {
   names: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default Buttonpanel;
-

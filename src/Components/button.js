@@ -6,7 +6,6 @@ const Button = props => {
   const { name, size, last } = props;
   if (name) {
     return <input className={`btn-0 size-${size} ${(last) ? 'last' : ''}`} type="button" value={name} />;
-
   }
   return null;
 };
