@@ -1,26 +1,19 @@
-/* eslint react/jsx-filename-extension: 0 react/jsx-one-expression-per-line:0 */
-
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import Buttonpanel from './Components/buttonpanel';
+import Display from './Components/display';
+// import calculate from './Logic/calculate';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap" rel="stylesheet" />
+      <Display result={0} />
+      <Buttonpanel names={['AC', '+/-', '%', '÷']} />
+      <Buttonpanel names={['7', '8', '9', 'X']} />
+      <Buttonpanel names={['4', '5', '6', '-']} />
+      <Buttonpanel names={['1', '2', '3', '+']} />
+      <Buttonpanel names={['0', '.', '=']} />
     </div>
   );
 }
