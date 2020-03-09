@@ -5,7 +5,7 @@ import Button from './button';
 const Buttonpanel = props => {
   const { names, clickHandler } = props;
 
-  function handleClick(name){
+  function handleClick(name) {
     clickHandler(name);
   }
 
@@ -14,7 +14,7 @@ const Buttonpanel = props => {
       {
         names.map((item, key) => (
           <Button
-            key={key+new Date().getTime()} 
+            key={key.toString().concat(new Date().getTime())}
             name={item}
             size={(key === 0 && names.length === 3) ? 2 : 1}
             last={key === names.length - 1}
@@ -27,5 +27,6 @@ const Buttonpanel = props => {
 };
 Buttonpanel.propTypes = {
   names: PropTypes.arrayOf(PropTypes.string).isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 export default Buttonpanel;
