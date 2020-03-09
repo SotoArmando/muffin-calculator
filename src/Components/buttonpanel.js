@@ -12,8 +12,8 @@ const Buttonpanel = props => {
           <Button
             key={0}
             name={item}
-            size={(key === 0 && names.length === 3) ? 2 : 1}
-            last={key === names.length - 1}
+            wide={(key === 0 && names.length === 3) ? 2 : 1}
+            color={key === names.length - 1}
           />
         ))
       }
