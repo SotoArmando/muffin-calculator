@@ -4,17 +4,24 @@ import Button from './button';
 
 
 const Buttonpanel = props => {
-  const { names } = props;
+  const names = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'X'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']]
+  debugger
   return (
-    <div className="buttonpanel">
+    <div>
       {
-        names.map((item, key) => (
-          <Button
-            key={0}
-            name={item}
-            wide={(key === 0 && names.length === 3) ? 2 : 1}
-            color={key === names.length - 1}
-          />
+        names.map((item) => (
+          <div className="Buttonpanel">
+            {
+              item.map((iitem, key) => 
+                <Button
+                  key={0}
+                  name={iitem}
+                  wide={(key === 0 && item.length === 3) ? 2 : 1}
+                  color={key === item.length - 1}
+                />
+              )
+            }
+          </div>
         ))
       }
     </div>
