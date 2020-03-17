@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const Button = props => {
-  const { name, size, last } = props;
+  const { name, wide, color } = props;
   if (name) {
-    return <input className={`btn-0 size-${size} ${(last) ? 'last' : ''}`} type="button" value={name} />;
+    return <input className={`btn-0 size-${wide ? 2 : 1} ${color}`} type="button" value={name} />;
   }
   return null;
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired,
-  last: PropTypes.bool.isRequired,
+  wide: PropTypes.bool.isRequired,
+  color: PropTypes.string.isRequired,
 };
 export default Button;

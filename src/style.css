@@ -2,43 +2,72 @@ body {
     font-family: 'Spartan', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(rgba(0,0,0,.94), rgba(0,0,0,.96));
+    background-repeat: no-repeat;
+    min-height: -webkit-fill-available;
 }
 
 div#root {
     display: flex;
     justify-content: center;
+    padding-top: 5em;
+
+    width: 700px;
 }
 
+
 .btn-0 {
-    min-width: 5em;
-    min-height: 5em;
+    min-width: 100px;
+    min-height: 100px;
     font-size: 1.375em;
     color: rgba(0,0,0,.74);
     background-image: none;
-    background-color: transparent;
+    background-color: rgba(255,255,255,.96);
     border: none;
-    border-right: 1px solid rgba(0,0,0,.15);
-    border-bottom: 1px solid rgba(0,0,0,.15);
+    border-right: 2px solid rgba(0,0,0,.06);
+    border-bottom: 2px solid rgba(0,0,0,.06);
     box-sizing: border-box;
-    transition-duration: 355ms;
+    
 }
 
+.btn-0.size-2 {
+    min-width: 200px;
+    min-height: 100px;
+}
+.btn-0.orange {
+    background-color: orange;
+}
 .display {
     font-size: 3em;
     min-height: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1em;
-    background-color: rgba(0,0,0,.06);
-    color: rgba(0,0,0,.34);
+    padding-left: .56em;
+    background-color: rgba(255,255,255,.14);
+    color: rgba(255,255,255,.34);
+    border: 1px solid rgba(0,0,0,.15);
+    box-sizing: border-box;
+    margin-left: 0.25px;
+    font-weight: 500;
+
 }
 
 button:focus, input[type="button"]:focus {
     outline: none;
 }
 button:focus, input[type="button"]:active {
-    transition-duration: 200ms;
-    color:yellow;
-    background-color: #F0F0F5;
+  
+    color:#F0F0F5;
+    
+
+}
+
+.buttonpanel {
+    border-left: 1px solid rgba(0,0,0,.15);
+    display: flexbox;
 }
