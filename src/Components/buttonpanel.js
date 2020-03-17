@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 import Button from './button';
 
@@ -9,6 +10,7 @@ const Buttonpanel = props => {
   function handleClick(name) {
     clickHandler(name);
   }
+  
   return (
     <div>
       {
@@ -22,6 +24,7 @@ const Buttonpanel = props => {
                   wide={(key === 0 && item.length === 3)}
                   color={(key === item.length - 1) ? 'orange' : 'white'}
                   clickHandler={handleClick}
+
                 />
               ))
             }

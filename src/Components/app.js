@@ -2,6 +2,7 @@ import React from 'react';
 import '../style.css';
 import Buttonpanel from './buttonpanel';
 import Display from './display';
+
 import Calculator from '../Logic/calculate';
 
 export default class App extends React.Component {
@@ -34,3 +35,4 @@ export default class App extends React.Component {
     );
   }
 }
+
