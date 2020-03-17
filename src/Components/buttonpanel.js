@@ -3,29 +3,38 @@ import PropTypes from 'prop-types';
 import Button from './button';
 
 const Buttonpanel = props => {
-  const { names, clickHandler } = props;
+  const { clickHandler } = props;
+  const names = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'X'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']];
 
-  function handleClick(name){
+  function handleClick(name) {
     clickHandler(name);
   }
-
   return (
-    <div className="buttonpanel">
+    <div>
       {
-        names.map((item, key) => (
-          <Button
-            key={key+new Date().getTime()} 
-            name={item}
-            size={(key === 0 && names.length === 3) ? 2 : 1}
-            last={key === names.length - 1}
-            clickHandler={handleClick}
-          />
+        names.map(item => (
+          <div key={0} className="Buttonpanel">
+            {
+              item.map((iitem, key) => (
+                <Button
+                  key={0}
+                  name={iitem}
+                  wide={(key === 0 && item.length === 3)}
+                  color={(key === item.length - 1) ? 'orange' : 'white'}
+                  clickHandler={handleClick}
+                />
+              ))
+            }
+          </div>
         ))
       }
     </div>
   );
 };
+
 Buttonpanel.propTypes = {
-  names: PropTypes.arrayOf(PropTypes.string).isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
+
+
 export default Buttonpanel;

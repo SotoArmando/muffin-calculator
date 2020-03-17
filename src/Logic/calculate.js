@@ -1,7 +1,7 @@
 import operate from './operate';
 
 
-class calculator {
+export default class Calculator {
   constructor() {
     this.returnstotal = true;
     this.total = '';
@@ -16,9 +16,8 @@ class calculator {
   getnumber() {
     if (this.returnstotal) {
       return this.total;
-    } else {
-      return this.next;
     }
+    return this.next;
   }
 
   setnumber(number) {
@@ -31,40 +30,35 @@ class calculator {
 
   tap(text) {
     const condition1 = ['AC', '='].indexOf(text);
-    const condition = ['+/-', '%', '÷', 'X', '-', '+',].indexOf(text);
+    const condition = ['+/-', '%', '÷', 'X', '-', '+'].indexOf(text);
     const condition2 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].indexOf(text);
-    debugger;
     if (condition !== -1) {
       if (condition === 0) {
         this.operation = text;
         this.operate();
-      }
-      else {
+      } else {
         this.operation = text;
         this.returnstotal = !this.returnstotal;
         this.next = '';
       }
-
     } else if (condition1 !== -1) {
       switch (condition1) {
         default:
-          break
+          break;
         case 0:
           this.total = '';
           this.next = '';
           this.operation = '';
-          break
+          break;
         case 1:
           if (this.operation !== '') {
-            this.operate()
+            this.operate();
             this.returnstotal = !this.returnstotal;
           }
-          break
+          break;
       }
     } else if (condition2 !== -1) {
-      this.setnumber(text)
+      this.setnumber(text);
     }
   }
 }
-
-export default calculator;
