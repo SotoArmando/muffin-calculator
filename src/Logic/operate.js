@@ -12,7 +12,7 @@ export default function operate(numberOne, numberTwo, operation) {
     case operationssrt[0]:
       return x.mul(-1).toFixed();
     case operationssrt[1]:
-      return x.mod(y).toFixed();
+      return x.times(y).times(100).toFixed();
     case operationssrt[2]:
       return x.div(y).toFixed();
     case operationssrt[3]:
