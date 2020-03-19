@@ -10,7 +10,7 @@ const Buttonpanel = props => {
   function handleClick(name) {
     clickHandler(name);
   }
-  
+
   return (
     <div>
       {
