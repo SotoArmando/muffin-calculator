@@ -46,7 +46,7 @@ class calculator {
         default:
           break;
         case 0:
-          this.total = '';
+          this.total = '0';
           this.next = '';
           this.operation = '';
           break;
@@ -58,6 +58,9 @@ class calculator {
           break;
       }
     } else if (condition2 !== -1) {
+      if (this.total === '0') {
+        this.total = '';
+      }
       this.setnumber(text);
     }
   }

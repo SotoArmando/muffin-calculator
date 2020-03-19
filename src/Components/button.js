@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = props => {
   const {
-    name, size, last, clickHandler,
+    name, wide, color, clickHandler,
   } = props;
 
   function handleClick() {
@@ -11,15 +11,15 @@ const Button = props => {
   }
 
   if (name) {
-    return <input className={`btn-0 size-${size} ${(last) ? 'last' : ''}`} type="button" value={name} onClick={handleClick} />;
+    return <input className={`btn-0 size-${wide ? 2 : 1} ${color}`} type="button" value={name} onClick={handleClick} />;
   }
   return null;
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired,
-  last: PropTypes.bool.isRequired,
+  wide: PropTypes.bool.isRequired,
+  color: PropTypes.string.isRequired,
   clickHandler: PropTypes.func.isRequired,
 };
 export default Button;
