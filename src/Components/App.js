@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import '../style.css';
 import Buttonpanel from './buttonpanel';
 import Display from './display';
 import Calculator from '../Logic/calculate';
@@ -8,9 +8,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { result: '0', calculator: new Calculator() };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = (name) => {
+  handleClick(name) {
     const { calculator } = this.state;
     calculator.tap(name);
     this.setState({ result: calculator.getnumber(), calculator });
