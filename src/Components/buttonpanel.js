@@ -1,8 +1,16 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
 import Button from './button';
 
-const Buttonpanel = () => {
+const Buttonpanel = props => {
+  const { clickHandler } = props;
   const names = [['AC', '+/-', '%', '÷'], ['7', '8', '9', 'X'], ['4', '5', '6', '-'], ['1', '2', '3', '+'], ['0', '.', '=']];
+
+  function handleClick(name) {
+    clickHandler(name);
+  }
+
   return (
     <div>
       {
@@ -15,6 +23,8 @@ const Buttonpanel = () => {
                   name={iitem}
                   wide={(key === 0 && item.length === 3)}
                   color={(key === item.length - 1) ? 'orange' : 'white'}
+                  clickHandler={handleClick}
+
                 />
               ))
             }
@@ -24,5 +34,10 @@ const Buttonpanel = () => {
     </div>
   );
 };
+
+Buttonpanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
+
 
 export default Buttonpanel;
