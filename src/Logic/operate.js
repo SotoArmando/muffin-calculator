@@ -1,29 +1,30 @@
-const Big = require('big.js');
+const Big = require('big-js');
 
 
 export default function operate(numberOne, numberTwo, operation) {
   const operationssrt = ['+/-', '%', '÷', 'X', '-', '+'];
-  let x; let y; let
-    z;
+  let x; let y; let z;
+
+  x = Big(numberOne);
+  y = Big(numberTwo);
+
   switch (operation) {
     case operationssrt[0]:
-      return new Big(numberOne).mul(-1).toFixed();
+      return x.mul(-1).toFixed();
     case operationssrt[1]:
-      return new Big(numberOne).mod(new Big(numberTwo)).toFixed();
+      return x.mod(y).toFixed();
     case operationssrt[2]:
-      return new Big(numberOne).div(new Big(numberTwo)).toFixed();
+      return x.div(y).toFixed();
     case operationssrt[3]:
-      x = new Big(numberOne);
-      y = new Big(numberTwo);
       z = x.mul(y).toFixed();
       return z;
     case operationssrt[4]:
-      x = new Big(numberOne);
-      y = new Big(numberTwo);
+      x = Big(numberOne);
+      y = Big(numberTwo);
       z = x.minus(y).toFixed();
       return z;
     case operationssrt[5]:
-      return new Big(numberOne).plus(new Big(numberTwo)).toFixed();
+      return x.plus(y).toFixed();
     default:
       return 0;
   }
