@@ -14,12 +14,12 @@ const Buttonpanel = props => {
   return (
     <div>
       {
-        names.map(item => (
-          <div key={0} className="Buttonpanel">
+        names.map((item,key) => (
+          <div key={('5'+key).concat(new Date().getTime())} className="Buttonpanel">
             {
               item.map((iitem, key) => (
                 <Button
-                  key={0}
+                  key={('3'+iitem).concat(new Date().getTime())}
                   name={iitem}
                   wide={(key === 0 && item.length === 3)}
                   color={(key === item.length - 1) ? 'orange' : 'white'}

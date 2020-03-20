@@ -20,10 +20,10 @@ class App extends React.Component {
   render() {
     const { result } = this.state;
     return (
-      <div className="App">
+      <div key={'4'.concat(new Date().getTime())} className="App">
         <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700&display=swap" rel="stylesheet" />
-        <Display key={'5'.concat(new Date().getTime())} result={result} />
-        <Buttonpanel key={`0${new Date().getTime()}`} clickHandler={this.handleClick} />
+        <Display key={'1'.concat(new Date().getTime())} result={result} />
+        <Buttonpanel key={'0'.concat(new Date().getTime())} clickHandler={this.handleClick} />
       </div>
     );
   }
