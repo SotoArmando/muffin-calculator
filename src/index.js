@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
-import App from './Components/App';
+import App from './Components/app';
 import * as serviceWorker from './serviceWorker';
 import Calculate from './Logic/calculate';
 
