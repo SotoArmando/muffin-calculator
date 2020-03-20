@@ -7,9 +7,10 @@ An Easy and Cool Calculator it lets ya go deal with numbers as any other calcula
 
 1. Tap (Win + R) => type cmd and enter.
 2. git clone https://github.com/SotoArmando/muffin-calculator
-3. cd muffin-calculator
-4. npm install
-5. npm start
+3. git checkout feature/even-handlers
+4. cd muffin-calculator
+5. npm install
+6. npm start
 
 ## Built With
 
