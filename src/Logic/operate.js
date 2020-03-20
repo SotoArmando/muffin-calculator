@@ -10,13 +10,13 @@ export default function operate(numberOne, numberTwo, operation) {
 
   switch (operation) {
     case operationssrt[0]:
-      z = Big(numberOne).mul(-1).toFixed();
+      z = x.mul(-1).toFixed();
       break;
     case operationssrt[1]:
-      z = Big(numberOne).mod(Big(numberTwo)).toFixed();
+      z = x.mod(y).toFixed();
       break;
     case operationssrt[2]:
-      z = Big(numberOne).div(Big(numberTwo)).toFixed();
+      z = x.div(y).toFixed();
       break;
     case operationssrt[3]:
       z = x.mul(y).toFixed();
@@ -25,7 +25,7 @@ export default function operate(numberOne, numberTwo, operation) {
       z = x.minus(y).toFixed();
       break;
     case operationssrt[5]:
-      z = Big(numberOne).plus(Big(numberTwo)).toFixed();
+      z = x.plus(y).toFixed();
       break;
     default:
       z = 0;
