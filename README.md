@@ -1,10 +1,15 @@
 # Muffin Calculator
 
 Muffin Calculator is a good way for me to improve my features done in REACT.
-
-
-
 An Easy and Cool Calculator it lets ya go deal with numbers as any other calculator... we built apple.
+
+## Instructions
+
+1. Home + R => type cmd and enter.
+2. git clone https://github.com/SotoArmando/muffin-calculator
+3. cd muffin-calculator
+4. npm install
+5. npm start
 
 ## Built With
 
