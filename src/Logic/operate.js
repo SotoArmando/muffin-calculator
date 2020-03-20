@@ -5,8 +5,8 @@ export default function operate(numberOne, numberTwo, operation) {
   const operationssrt = ['+/-', '%', '÷', 'X', '-', '+'];
   let z;
 
-  const x = Big(numberOne);
-  const y = Big(numberTwo);
+  const x = Big((numberOne === '') ? 0 : numberOne);
+  const y = Big((numberTwo === '') ? 0 : numberTwo);
 
   switch (operation) {
     case operationssrt[0]:
