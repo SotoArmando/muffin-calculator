@@ -1,7 +1,7 @@
 import operate from './operate';
 
 
-class calculator {
+export default class Calculator {
   constructor() {
     this.returnstotal = true;
     this.total = '';
@@ -79,5 +79,3 @@ class calculator {
     }
   }
 }
-
-export default calculator;
