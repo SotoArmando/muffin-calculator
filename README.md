@@ -5,7 +5,7 @@ An Easy and Cool Calculator it lets ya go deal with numbers as any other calcula
 
 ## Instructions
 
-1. Tap [Win + R] => type cmd and Tap [enter].
+1. Tap [Win + R] => type cmd then Tap [enter].
 2. git clone https://github.com/SotoArmando/muffin-calculator
 3. cd muffin-calculator
 4. npm install
