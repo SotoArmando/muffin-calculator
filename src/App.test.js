@@ -1,6 +1,8 @@
+/* eslint no-undef: 0  react/jsx-filename-extension: 0 */
+
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from './Components/App';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
